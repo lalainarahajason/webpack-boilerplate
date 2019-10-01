@@ -35,7 +35,7 @@ let config = {
   devServer: {
     contentBase: path.resolve(__dirname, "./public"),
     historyApiFallback: true,
-    inline: true,
+    inline: false,
     open: true,
     hot: true
   },
@@ -48,6 +48,6 @@ module.exports = config;
 if (process.env.NODE_ENV === 'production') {
   module.exports.plugins.push(
     new webpack.optimize.UglifyJsPlugin(),
-    new OptimizeCSSAssets()
+    //new OptimizeCSSAssets()
   );
 }

@@ -1,0 +1,10 @@
+
+// Surcharge your bootstrap variables here 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1279px
+) !default;
+
+@import "~bootstrap/scss/bootstrap";
